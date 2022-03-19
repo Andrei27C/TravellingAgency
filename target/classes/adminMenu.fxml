@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.AdminMenuController">
+   <children>
+      <ListView fx:id="listView" layoutX="26.0" layoutY="47.0" onMouseClicked="#clickOnTableRow" prefHeight="480.0" prefWidth="691.0" />
+      <TextField fx:id="idTF" layoutX="789.0" layoutY="84.0" promptText="vacation id" />
+      <Button fx:id="refreshButton" layoutX="62.0" layoutY="586.0" mnemonicParsing="false" onAction="#refreshTable" text="Refresh Table" />
+      <TextField fx:id="priceTF" layoutX="789.0" layoutY="119.0" promptText="price" />
+      <TextField fx:id="extraDetailsTF" layoutX="789.0" layoutY="203.0" prefHeight="25.0" prefWidth="470.0" promptText="extra details" />
+      <TextField fx:id="noOfPeopleThatCanBookTF" layoutX="789.0" layoutY="250.0" prefHeight="25.0" prefWidth="216.0" promptText="number of people that can book" />
+      <Button fx:id="addButton" layoutX="778.0" layoutY="312.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button fx:id="editButton" layoutX="871.0" layoutY="312.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="deleteButton" layoutX="1124.0" layoutY="312.0" mnemonicParsing="false" onAction="#deleteVacationPackage" text="Delete" />
+      <TextField fx:id="nameTF" layoutX="789.0" layoutY="47.0" promptText="vacation name" />
+      <DatePicker fx:id="periodStartTF" layoutX="789.0" layoutY="159.0" promptText="start date" />
+      <DatePicker fx:id="periodEndTF" layoutX="979.0" layoutY="159.0" promptText="end date" />
+      <ChoiceBox fx:id="destIdCB" layoutX="963.0" layoutY="84.0" prefWidth="150.0" />
+      <TextField fx:id="addDestTF" layoutX="778.0" layoutY="544.0" promptText="Destination Name" />
+      <Label layoutX="775.0" layoutY="510.0" text="Add destination" />
+      <Button layoutX="778.0" layoutY="586.0" mnemonicParsing="false" onAction="#addDestination" text="Add" />
+      <Label layoutX="963.0" layoutY="510.0" text="Delete destination" />
+      <ChoiceBox fx:id="deleteDestCB" layoutX="963.0" layoutY="544.0" prefWidth="150.0" />
+      <Button layoutX="963.0" layoutY="586.0" mnemonicParsing="false" onAction="#deleteDestination" text="Delete" />
+   </children>
+</AnchorPane>
